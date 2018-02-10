@@ -33,9 +33,9 @@ public class Cuadrado extends FiguraGeometrica {
         this.vertice4.mover(dx, dy);
     }
 
-    @Override
+     @Override
     public String toString() {
-        return "[" + vertice1 + "," + vertice2 + "," + vertice3 + "," + vertice4 + ']';
+        return "Nombre: " +nombre+ "- v1 " + v1 + "- v2 " + v2 + "- v3 " + v3 + "- v4 " + v4 ;
     }
     
     
