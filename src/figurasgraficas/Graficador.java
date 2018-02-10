@@ -64,12 +64,22 @@ public class Graficador {
         pw.close();
     }
     
-    public void recargar (){
-        /*
-         * Completar este método: 
-         * El objetivo es leer todos los datos del archivo de texto 
-         * y crear los objetos 'FiguraGeometrica' para agregarlos a
-         * la colección 'figuras'
-        */
+    public static String leer(){
+        String temp = "";
+        String aux;
+        try {
+            BufferedReader leer = new BufferedReader(new FileReader("documento.txt"));
+            
+            
+
+            while ((aux = leer.readLine()) != null) {
+                temp += aux + "\n";
+
+            }
+            System.out.println("Figuras:\n" + temp);
+            
+        } catch (Exception e) {
+        }
+        return temp;
     }
 }
