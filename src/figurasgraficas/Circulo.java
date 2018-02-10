@@ -47,6 +47,9 @@ public class Circulo extends FiguraGeometrica{
     public String toString() {
         return "(" + centro + ")";
     }
-    
+        @Override
+    public String toString() {
+        return "Nombre " + nombre+" Radio "+ radio + " Centro " + centro ;
+    }
     
 }
